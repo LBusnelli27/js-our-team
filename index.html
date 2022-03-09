@@ -16,12 +16,44 @@
     <!-- ? Link my css -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
+
+
 <body>
+
+    <header class="text-center mb-3 p-2 bg-primary">
+        <h2>Our Team</h2>
+    </header>
+
+
     <main>
         <div class="container-fluid">
-            <h2 class="text-center mb-3">Our Team</h2>
-            <div id="my-row" class="row p-3">
+            <div id="my-row" class="row p-3 mb-4">
                 
+            </div>
+
+            <h3 class="text-center mb-3">Join the team</h3>
+            <div class="row">
+                <div class="col-2 offset-4">
+                    <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                </div>
+
+
+                <div class="col-2">
+                    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                </div>
+
+
+                <div class="col-4 offset-4">
+                    <label for="colFormLabel" class="col-sm-2 col-form-label">Email</label>
+
+                    <input type="email" class="form-control mb-2" id="colFormLabel" placeholder="Insert your e-mail">
+
+                    <label for="colFormLabel" class="col-sm-2 col-form-label">About you</label>
+                    <textarea class="form-control mb-3" placeholder="Tell us something about you" id="floatingTextarea2" style="height: 100px"></textarea>
+
+                    <button class="btn btn-success">Send</button>
+                </div>
             </div>
         </div>
     </main>
