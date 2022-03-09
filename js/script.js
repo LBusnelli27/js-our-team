@@ -51,7 +51,7 @@ for (let i = 0; i < team.length; i++) {
                 </div>
                 <div id="description-card" class="card-body">
                     <p id="role-desc">${team[i].role}</p>
-                    <p id="img-desc">${team[i].image}</p>
+                    <img class="img-fluid" src="img/${team[i].image}" alt="${team[i].name} Image">
                 </div>
             </div>
         </div>
