@@ -36,8 +36,24 @@ const team = [
 
 
 // ***** My code *****
+const rowContainer = document.getElementById('my-row');
+
 for (let i = 0; i < team.length; i++) {
     console.log(team[i].name);
     console.log(team[i].role);
     console.log(team[i].image);
+
+    rowContainer.innerHTML += `
+        <div class="col-2">
+            <div class="card text-center">
+                <div class="card-header">
+                    <h5 id="member-name">${team[i].name}</h5>
+                </div>
+                <div id="description-card" class="card-body">
+                    <p id="role-desc">${team[i].role}</p>
+                    <p id="img-desc">${team[i].image}</p>
+                </div>
+            </div>
+        </div>
+    `
 }
